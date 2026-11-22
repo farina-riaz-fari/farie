@@ -2,27 +2,41 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFF9F2;
-  --foreground: #493747;
+  --background: #FFF7FB;
+  --foreground: #1F1F2E;
 
-  --cream: #FFF9F2;
-  --blush: #F8E8EF;
-  --lavender: #E9DDF5;
-  --rose: #C58AA8;
-  --plum: #493747;
+  /* Brand colors */
+  --purple: #4D44B5;
+  --pink: #F7B6D2;
+  --lavender: #E8DFF9;
+  --soft-pink: #FFF7FB;
+  --dark: #1F1F2E;
   --white: #FFFFFF;
 
-  --muted: #8B7B87;
-  --border: #F0E4EA;
+  /* Supporting colors */
+  --muted: #6B7280;
+  --border: #E8DFF9;
+
+  /* Semantic aliases for existing components */
+  --cream: var(--soft-pink);
+  --blush: var(--pink);
+  --rose: var(--purple);
+  --plum: var(--dark);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
+  --color-purple: var(--purple);
+  --color-pink: var(--pink);
+  --color-lavender: var(--lavender);
+  --color-soft-pink: var(--soft-pink);
+  --color-dark: var(--dark);
+  --color-white: var(--white);
+
   --color-cream: var(--cream);
   --color-blush: var(--blush);
-  --color-lavender: var(--lavender);
   --color-rose: var(--rose);
   --color-plum: var(--plum);
 
@@ -61,5 +75,5 @@ a {
 
 ::selection {
   background: var(--lavender);
-  color: var(--plum);
+  color: var(--purple);
 }
