@@ -6,7 +6,7 @@
   --foreground: #1F1F2E;
 
   /* Brand colors */
-  --purple: #4D44B5;
+  --purple: #493747;
   --pink: #F7B6D2;
   --lavender: #E8DFF9;
   --soft-pink: #FFF7FB;
@@ -17,7 +17,7 @@
   --muted: #6B7280;
   --border: #E8DFF9;
 
-  /* Semantic aliases for existing components */
+  /* Compatibility aliases */
   --cream: var(--soft-pink);
   --blush: var(--pink);
   --rose: var(--purple);
