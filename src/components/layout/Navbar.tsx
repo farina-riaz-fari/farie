@@ -1,10 +1,10 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faMagnifyingGlass,
-  faUser,
   faBagShopping,
+  faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-regular-svg-icons";
 
 export default function Navbar() {
   return (
@@ -45,15 +45,15 @@ export default function Navbar() {
 
       {/* Action Icons */}
       <div className="flex items-center gap-6 text-purple">
-        <button aria-label="Search">
+        <button aria-label="Search" className="transition-colors hover:text-dark w-4 h-4">
           <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" />
         </button>
 
-        <button aria-label="Account">
+        <button aria-label="Account" className="transition-colors hover:text-dark w-4 h-4">
           <FontAwesomeIcon icon={faUser} size="lg" />
         </button>
 
-        <button aria-label="Shopping bag">
+        <button aria-label="Shopping bag" className="transition-colors hover:text-dark w-4 h-4">
           <FontAwesomeIcon icon={faBagShopping} size="lg" />
         </button>
       </div>
