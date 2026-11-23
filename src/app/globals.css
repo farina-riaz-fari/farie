@@ -6,7 +6,7 @@
   --foreground: #1F1F2E;
 
   /* Brand colors */
-  --purple: #493747;
+  --purple: #5A3E71;
   --pink: #F7B6D2;
   --lavender: #E8DFF9;
   --soft-pink: #FFF7FB;
@@ -17,11 +17,13 @@
   --muted: #6B7280;
   --border: #E8DFF9;
 
+  /* Additional brand colors */
+  --rose: #C58AA8;
+  --plum: #493747;
+
   /* Compatibility aliases */
   --cream: var(--soft-pink);
   --blush: var(--pink);
-  --rose: var(--purple);
-  --plum: var(--dark);
 }
 
 @theme inline {
@@ -75,5 +77,5 @@ a {
 
 ::selection {
   background: var(--lavender);
-  color: var(--purple);
+  color: var(--plum);
 }
