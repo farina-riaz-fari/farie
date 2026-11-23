@@ -17,27 +17,46 @@ export default function Navbar() {
       {/* Navigation Links */}
       <ul className="flex items-center gap-8">
         <li>
-          <a href="#" className="border-b-2 border-purple pb-1 text-purple">
+          <a
+            href="#"
+            className="relative pb-2 text-purple after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:rounded-full after:bg-plum"
+          >
             Home
           </a>
         </li>
+
         <li>
-          <a href="#" className="text-dark transition-colors hover:text-purple">
+          <a
+            href="#"
+            className="text-dark transition-colors hover:text-purple"
+          >
             Shop
           </a>
         </li>
+
         <li>
-          <a href="#" className="text-dark transition-colors hover:text-purple">
+          <a
+            href="#"
+            className="text-dark transition-colors hover:text-purple"
+          >
             Collections
           </a>
         </li>
+
         <li>
-          <a href="#" className="text-dark transition-colors hover:text-purple">
+          <a
+            href="#"
+            className="text-dark transition-colors hover:text-purple"
+          >
             About
           </a>
         </li>
+
         <li>
-          <a href="#" className="text-dark transition-colors hover:text-purple">
+          <a
+            href="#"
+            className="text-dark transition-colors hover:text-purple"
+          >
             Contact
           </a>
         </li>
@@ -45,15 +64,24 @@ export default function Navbar() {
 
       {/* Action Icons */}
       <div className="flex items-center gap-6 text-purple">
-        <button aria-label="Search" className="transition-colors hover:text-dark w-4 h-4">
+        <button
+          aria-label="Search"
+          className="h-4 w-4 transition-colors hover:text-dark"
+        >
           <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" />
         </button>
 
-        <button aria-label="Account" className="transition-colors hover:text-dark w-4 h-4">
+        <button
+          aria-label="Account"
+          className="h-4 w-4 transition-colors hover:text-dark"
+        >
           <FontAwesomeIcon icon={faUser} size="lg" />
         </button>
 
-        <button aria-label="Shopping bag" className="transition-colors hover:text-dark w-4 h-4">
+        <button
+          aria-label="Shopping bag"
+          className="h-4 w-4 transition-colors hover:text-dark"
+        >
           <FontAwesomeIcon icon={faBagShopping} size="lg" />
         </button>
       </div>
