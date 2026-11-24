@@ -34,16 +34,33 @@ export default function Navbar() {
         <ul className="hidden items-center gap-8 min-[801px]:flex">
           {navLinks.map((link) => (
             <li key={link}>
-              <a
-                href="#"
-                className={`relative pb-2 transition-colors hover:text-purple ${
-                  link === "Home"
-                    ? "text-purple after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:rounded-full after:bg-plum"
-                    : "text-dark"
-                }`}
-              >
-                {link}
-              </a>
+              
+            <a
+              href="#"
+              className={`relative pb-3 transition-colors hover:text-purple ${
+                link === "Home" ? "text-purple" : "text-dark"
+              }`}
+            >
+              {link}
+
+              {link === "Home" && (
+                <svg
+                  className="absolute -bottom-1 left-0 h-[7px] w-full"
+                  viewBox="0 0 100 7"
+                  preserveAspectRatio="none"
+                  fill="none"
+                >
+                  <path
+                    d="M1 2 C3 2 4 5 8 5 L92 5 C96 5 97 2 99 2"
+                    stroke="#493747"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              )}
+            </a>
+
             </li>
           ))}
         </ul>
