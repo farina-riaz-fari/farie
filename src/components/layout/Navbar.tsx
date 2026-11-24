@@ -66,21 +66,21 @@ export default function Navbar() {
       <div className="flex items-center gap-6 text-purple">
         <button
           aria-label="Search"
-          className="h-4 w-4 transition-colors hover:text-dark"
+          className="h-5 w-5 transition-colors hover:text-dark"
         >
           <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" />
         </button>
 
         <button
           aria-label="Account"
-          className="h-4 w-4 transition-colors hover:text-dark"
+          className="h-5 w-5 transition-colors hover:text-dark"
         >
           <FontAwesomeIcon icon={faUser} size="lg" />
         </button>
 
         <button
           aria-label="Shopping bag"
-          className="h-4 w-4 transition-colors hover:text-dark"
+          className="h-5 w-5 transition-colors hover:text-dark"
         >
           <FontAwesomeIcon icon={faBagShopping} size="lg" />
         </button>
