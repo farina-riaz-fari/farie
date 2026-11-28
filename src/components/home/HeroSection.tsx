@@ -4,8 +4,8 @@ import HeroImage from "../../../public/images/HeroImage.png";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-1 items-center px-6 py-16 md:px-12 lg:px-20">
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 md:grid-cols-2">
+    <section className="flex items-center">
+      <div className="grid w-full max-w-7xl items-center gap-12 md:grid-cols-2">
 
         <div className="text-center md:text-left">
           <h1 className="text-4xl font-bold text-purple sm:text-5xl lg:text-6xl">
@@ -22,9 +22,17 @@ export default function HeroSection() {
           </a>
         </div>
 
-        
-
+        <div className="flex justify-center md:justify-end">
+          <Image
+            src={HeroImage}
+            alt="Hero Image"
+            width={500}
+            height={500}
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
       </div>
     </section>
   );
 }
+
