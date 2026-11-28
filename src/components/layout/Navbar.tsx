@@ -10,6 +10,8 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
+import Logo from "../../../public/images/LogoWithButterfly.png";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,11 +25,11 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-soft-pink px-6 py-4 shadow-sm">
+    <nav className="bg-soft-pink px-12 py-2 shadow-sm">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-semibold text-black">
-          Farié
+         <Image src={Logo} alt="Logo" width={100} height={100} />
         </div>
 
         {/* Desktop Navigation */}
