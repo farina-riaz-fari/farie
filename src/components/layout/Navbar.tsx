@@ -29,7 +29,13 @@ export default function Navbar() {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-semibold text-black">
-         <Image src={Logo} alt="Logo" width={100} height={100} />
+         <Image
+          src={Logo}
+          alt="Farié Logo"
+          width={100}
+          height={100}
+          style={{ width: "100px", height: "auto" }}
+        />
         </div>
 
         {/* Desktop Navigation */}
@@ -39,8 +45,8 @@ export default function Navbar() {
               
             <a
               href="#"
-              className={`relative pb-3 transition-colors hover:text-purple ${
-                link === "Home" ? "text-purple" : "text-dark"
+              className={`relative pb-3 transition-colors hover:text-plum ${
+                link === "Home" ? "text-purple" : "text-plum"
               }`}
             >
               {link}
@@ -54,7 +60,7 @@ export default function Navbar() {
                 >
                   <path
                     d="M1 2 C3 2 4 5 8 5 L92 5 C96 5 97 2 99 2"
-                    stroke="#493747"
+                    stroke="#5A3E71"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -71,21 +77,21 @@ export default function Navbar() {
         <div className="flex items-center gap-4 text-purple min-[801px]:gap-6">
           <button
             aria-label="Search"
-            className="flex h-5 w-5 items-center justify-center transition-colors hover:text-dark"
+            className="flex h-5 w-5 items-center justify-center transition-colors hover:text-plum"
           >
             <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" />
           </button>
 
           <button
             aria-label="Account"
-            className="flex h-5 w-5 items-center justify-center transition-colors hover:text-dark"
+            className="flex h-5 w-5 items-center justify-center transition-colors hover:text-plum"
           >
             <FontAwesomeIcon icon={faUser} size="lg" />
           </button>
 
           <button
             aria-label="Shopping bag"
-            className="flex h-5 w-5 items-center justify-center transition-colors hover:text-dark"
+            className="flex h-5 w-5 items-center justify-center transition-colors hover:text-plum"
           >
             <FontAwesomeIcon icon={faBagShopping} size="lg" />
           </button>
@@ -113,10 +119,10 @@ export default function Navbar() {
               <a
                 href="#"
                 onClick={() => setIsMenuOpen(false)}
-                className={`block py-1 transition-colors hover:text-purple ${
+                className={`block py-1 transition-colors hover:text-plum ${
                   link === "Home"
                     ? "font-semibold text-purple"
-                    : "text-dark"
+                    : "text-plum"
                 }`}
               >
                 {link}
